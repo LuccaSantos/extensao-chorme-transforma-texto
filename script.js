@@ -1,10 +1,15 @@
 document.addEventListener('DOMContentLoaded', function(){
     document.querySelector('#btn').addEventListener('click', function(){
         let text = document.querySelector('#texto').value
-
-        document.querySelector("#resultado").innerHTML = upper(text)
+        let option = document.querySelector('#option').value
+        
+        document.querySelector("#resultado").innerHTML = tranform(text, option)
     })
-    function upper(text) {
-        return text.toUpperCase()
+    function tranform(text, option) {
+        if (option == 1){
+            return text.toUpperCase()
+        }else if (option == 2) {
+            return text.toLowerCase()
+        }
     }
 })
