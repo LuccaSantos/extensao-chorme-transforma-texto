@@ -1,7 +1,7 @@
 {
-    "name":"caixa-alta",
+    "name":"Transforma Texto",
     "version":"1.0",
-    "description":"tranforma um texto em caixa alta",
+    "description":"Transforma texto em Maiúsculo ou Minúsculo",
     "browser_action":{
         "default_popup":"index.html"
     },
